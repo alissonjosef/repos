@@ -8,25 +8,63 @@ export const Loanding = styled.div`
   height: 100vh;
 `;
 
+export const PageAction = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+
+  button {
+    outline: 0;
+    border: 0;
+    background: #222;
+    color: #fff;
+
+    margin: 1rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+`;
+
+export const FilterLister = styled.div`
+  margin: 15px;
+
+  button {
+    outline: 0;
+    border: 0;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 0 3px;
+
+    &:nth-child(${props => props.active + 1}){
+      background: #0071db;
+      color: #FFF;
+    }
+  }
+`;
+
 export const IssusList = styled.ul`
   margin-top: 30px;
   padding-top: 30px;
   border-top: 1px solid #eee;
   list-style: none;
-   
-  li{
+
+  li {
     display: flex;
     padding: 15px 10px;
     background: #eafde6;
-   
+    border-radius: 4px;
 
     & + li {
-        margin-top: 12px;
+      margin-top: 12px;
     }
-
   }
 
-  img{
+  img {
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -37,34 +75,34 @@ export const IssusList = styled.ul`
     flex: 1;
     margin-left: 12px;
 
-    p{
-        margin-top: 10px;
-        font-size: 12px;
-        color: #000;
+    p {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #000;
     }
   }
 
-  strong{
+  strong {
     font-size: 15px;
 
-    a{
-        text-decoration: none;
-        color: #222;
-        transform: 0.3s;
+    a {
+      text-decoration: none;
+      color: #222;
+      transform: 0.3s;
 
-        &:hover{
-            color: #0071db;
-        }
+      &:hover {
+        color: #0071db;
+      }
     }
 
-    span{
-        background: #222;
-        color: #fff;
-        border-radius: 4px;
-        font-size:12px;
-        font-weight: 600;
-        padding: 5px 7px;
-        margin-left: 10px;
+    span {
+      background: #222;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 7px;
+      margin-left: 10px;
     }
   }
 `;
