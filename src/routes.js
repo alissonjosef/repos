@@ -7,7 +7,7 @@ export function PageRoutes() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/repositore/:repositorio" element={<Repositore />} />
+        <Route path="/repositorio/:repositorio" element={<Repositore />} />
       </Routes>
     </BrowserRouter>
   );
